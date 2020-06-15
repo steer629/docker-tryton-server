@@ -29,6 +29,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates
 
 # Install additional distribution packages
+# Add vim for easy edit
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	python3-bcrypt \
 	python3-levenshtein \
@@ -36,6 +37,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	python3-psycopg2 \
 	ssl-cert \
 	tryton-server \
+	vim \
 	unoconv \
 	&& rm -rf /var/lib/apt/lists/*
 
