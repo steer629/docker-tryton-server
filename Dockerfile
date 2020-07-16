@@ -22,7 +22,7 @@ RUN apt-get update \
 RUN echo "alias python=python3" >> ~/.bashrc \
     &&  alias python=pythonn
 
-COPY requirement.txt .
+COPY requirements.txt .
 
 # Install our requirements.
 RUN pip3 install -Ur requirement.txt
